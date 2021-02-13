@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{6D84F3E0-400E-4454-284A-6D9561B4117E}",
+	"EngineAssociation": "{1AD3EFC6-4ECE-EF84-174A-479B45CAA36D}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -9,7 +9,9 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"Engine"
+				"Engine",
+				"CoreUObject",
+				"UnrealEd"
 			]
 		}
 	],
