@@ -9,6 +9,11 @@ UCustomizeCharacterItemFactory::UCustomizeCharacterItemFactory() {
 	SupportedClass = UCustomizeCharacterItem::StaticClass();
 }
 
+uint32 UCustomizeCharacterItemFactory::GetMenuCategories() const
+{
+	return EAssetTypeCategories::Basic | EAssetTypeCategories::Misc;
+}
+
 UObject* UCustomizeCharacterItemFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
 	UCustomizeCharacterItem* CustomizeCharacterItemAsset = NewObject<UCustomizeCharacterItem>(InParent, Class, Name, Flags);

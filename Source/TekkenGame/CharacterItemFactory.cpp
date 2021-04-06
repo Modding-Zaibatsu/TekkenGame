@@ -2,11 +2,17 @@
 
 #include "TekkenGame.h"
 #include "CharacterItemFactory.h"
+#include "Developer/AssetTools/Public/AssetTypeCategories.h"
 
 UCharacterItemFactory::UCharacterItemFactory() {
 	bCreateNew = true;
 	bEditAfterNew = true;
 	SupportedClass = UCharacterItem::StaticClass();
+}
+
+uint32 UCharacterItemFactory::GetMenuCategories() const
+{
+	return EAssetTypeCategories::Basic | EAssetTypeCategories::Misc;
 }
 
 UObject* UCharacterItemFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)

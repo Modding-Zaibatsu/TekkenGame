@@ -62,7 +62,7 @@ enum class CharacterItemEditor : uint8
 	ID_NSB UMETA(DisplayName = "CharacterItemEditor::ID_NSB"), // 51
 	ID_NSC UMETA(DisplayName = "CharacterItemEditor::ID_NSC"), // 52
 	ID_KNM UMETA(DisplayName = "CharacterItemEditor::ID_KNM"), // 53
-	ID_LAST UMETA(DisplayName = "CharacterItemEditor::ID_LAST"), // 54
+	ID_NSD UMETA(DisplayName = "CharacterItemEditor::ID_NSD"), // 54
 	ID_MAX UMETA(DisplayName = "CharacterItemEditor::ID_MAX") // 55
 };
 
