@@ -60,11 +60,13 @@ enum class CharacterItemEditor : uint8
 	ID_JUL UMETA(DisplayName = "CharacterItemEditor::ID_JUL"), // 49
 	ID_NSA UMETA(DisplayName = "CharacterItemEditor::ID_NSA"), // 50
 	ID_NSB UMETA(DisplayName = "CharacterItemEditor::ID_NSB"), // 51
-	ID_NSC UMETA(DisplayName = "CharacterItemEditor::ID_NSC"), // 52
-	ID_KNM UMETA(DisplayName = "CharacterItemEditor::ID_KNM"), // 53
-	ID_NSD UMETA(DisplayName = "CharacterItemEditor::ID_NSD"), // 54
-	ID_LAST UMETA(DisplayName = "CharacterItemEditor::ID_LAST"), // 55
-	ID_MAX UMETA(DisplayName = "CharacterItemEditor::ID_MAX") // 56
+	ID_ZAF UMETA(DisplayName = "CharacterItemEditor::ID_ZAF"), // 52
+	ID_GAN UMETA(DisplayName = "CharacterItemEditor::ID_GAN"), // 53
+	ID_NSC UMETA(DisplayName = "CharacterItemEditor::ID_NSC"), // 54
+	ID_KNM UMETA(DisplayName = "CharacterItemEditor::ID_KNM"), // 55
+	ID_NSD UMETA(DisplayName = "CharacterItemEditor::ID_NSD"), // 56
+	ID_LAST UMETA(DisplayName = "CharacterItemEditor::ID_LAST"), // 57
+	ID_MAX UMETA(DisplayName = "CharacterItemEditor::ID_MAX") // 58
 };
 
 UENUM(BlueprintType)
