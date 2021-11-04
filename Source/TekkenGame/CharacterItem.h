@@ -177,6 +177,8 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		TEnumAsByte<TKCharacterSkeletonSocketPos> SocketPosition;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		UClass* ItemBlueprint;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		float ItemHeight;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		FRotator DefinedHeadItemSlope;

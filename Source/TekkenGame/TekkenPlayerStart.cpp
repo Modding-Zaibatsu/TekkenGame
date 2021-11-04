@@ -5,4 +5,14 @@
 
 
 
+int ATekkenPlayerStart::GetStageSequenceID() {
+	return StageSequenceId;
+}
 
+int ATekkenPlayerStart::GetStagePositionType() {
+	return PosType;
+}
+
+int ATekkenPlayerStart::GetFloorNo() {
+	return FloorNo;
+}
