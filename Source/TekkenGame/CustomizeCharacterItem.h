@@ -57,7 +57,7 @@ USTRUCT()
 struct FCustomizeMaterialInstanceColorData {
 	GENERATED_BODY()
 
-		UPROPERTY(EditAnywhere, Category = CustomizeMaterialInstanceColorData)
+	UPROPERTY(EditAnywhere, Category = CustomizeMaterialInstanceColorData)
 		class UMaterialInstance* MaterialInstanceOverride;
 	UPROPERTY(EditAnywhere, Category = CustomizeMaterialInstanceColorData)
 		FString LocationName;
@@ -118,6 +118,8 @@ class TEKKENGAME_API UCustomizeCharacterItem : public UObject
 {
 	GENERATED_BODY()
 	UPROPERTY(EditAnywhere, Category = CustomizeCharacterItem)
+		TEnumAsByte<EItemReleaseVer> ReleaseVer;
+	UPROPERTY(EditAnywhere, Category = CustomizeCharacterItem)
 		class UCharacterItem* CharacterItem;
 	UPROPERTY(EditAnywhere, Category = CustomizeCharacterItem)
 		TArray<struct FCustomizeMaterialInstanceColorData> ItemColors;
@@ -127,4 +129,6 @@ class TEKKENGAME_API UCustomizeCharacterItem : public UObject
 		TArray<struct FLinearColor> Index0Colors;
 	UPROPERTY(EditAnywhere, Category = CustomizeCharacterItem)
 		TArray<class UCustomizeCharacterItem*> DependencyItems;
+	UPROPERTY(EditAnywhere, Category = CustomizeCharacterItem)
+		bool bAllowSales;
 };

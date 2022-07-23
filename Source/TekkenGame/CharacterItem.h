@@ -91,7 +91,7 @@ enum ItemSlotPosition
 };
 
 UENUM(BlueprintType)
-enum EItemCommonGroup
+enum ItemCommonGroup
 {
 	unassigned_group UMETA(DisplayName = "unassigned_group"),
 	cmn_aur UMETA(DisplayName = "cmn_aur"),
@@ -152,6 +152,101 @@ enum TKCharacterCIType
 	TKCharacterCIType_MAX UMETA(DisplayName = "TKCharacterCIType_MAX")
 };
 
+UENUM(BlueprintType)
+enum TKAbilityItemId
+{
+	ITEM_NONE                        UMETA(DisplayName = "ITEM_NONE"),
+	ITEM_CHARACTER_EFFECT            UMETA(DisplayName = "ITEM_CHARACTER_EFFECT"),
+	ITEM_BASHOSEN                    UMETA(DisplayName = "ITEM_BASHOSEN"),
+	ITEM_PEKIN_NABE                  UMETA(DisplayName = "ITEM_PEKIN_NABE"),
+	ITEM_100TONHAMMER                UMETA(DisplayName = "ITEM_100TONHAMMER"),
+	ITEM_FUKU_HARISEN                UMETA(DisplayName = "ITEM_FUKU_HARISEN"),
+	ITEM_JAPANESE_SWORD              UMETA(DisplayName = "ITEM_JAPANESE_SWORD"),
+	ITEM_CHINESE_SWORD               UMETA(DisplayName = "ITEM_CHINESE_SWORD"),
+	ITEM_GRENADE                     UMETA(DisplayName = "ITEM_GRENADE"),
+	ITEM_NUNCHAKU                    UMETA(DisplayName = "ITEM_NUNCHAKU"),
+	ITEM_TONFA                       UMETA(DisplayName = "ITEM_TONFA"),
+	ITEM_LIGHT_SPEAR                 UMETA(DisplayName = "ITEM_LIGHT_SPEAR"),
+	ITEM_BONITO                      UMETA(DisplayName = "ITEM_BONITO"),
+	ITEM_CHAMPION_BELT               UMETA(DisplayName = "ITEM_CHAMPION_BELT"),
+	ITEM_TOUGOUBLADE                 UMETA(DisplayName = "ITEM_TOUGOUBLADE"),
+	ITEM_MISSILEPOD                  UMETA(DisplayName = "ITEM_MISSILEPOD"),
+	ITEM_GRENADE_LAUNCHER            UMETA(DisplayName = "ITEM_GRENADE_LAUNCHER"),
+	ITEM_BOMB                        UMETA(DisplayName = "ITEM_BOMB"),
+	ITEM_KUMA_STUFFED                UMETA(DisplayName = "ITEM_KUMA_STUFFED"),
+	ITEM_MAGICAL_STICK               UMETA(DisplayName = "ITEM_MAGICAL_STICK"),
+	ITEM_HAMMERHEAD                  UMETA(DisplayName = "ITEM_HAMMERHEAD"),
+	ITEM_KINKOJI                     UMETA(DisplayName = "ITEM_KINKOJI"),
+	ITEM_HARISEN                     UMETA(DisplayName = "ITEM_HARISEN"),
+	ITEM_SLEDGEHAMMER                UMETA(DisplayName = "ITEM_SLEDGEHAMMER"),
+	ITEM_NAIL_BAT                    UMETA(DisplayName = "ITEM_NAIL_BAT"),
+	ITEM_PIKOPIKOHAMMER              UMETA(DisplayName = "ITEM_PIKOPIKOHAMMER"),
+	ITEM_ZAPGUN                      UMETA(DisplayName = "ITEM_ZAPGUN"),
+	ITEM_HANDGUN                     UMETA(DisplayName = "ITEM_HANDGUN"),
+	ITEM_MODEL_GUN                   UMETA(DisplayName = "ITEM_MODEL_GUN"),
+	ITEM_REVOLVER                    UMETA(DisplayName = "ITEM_REVOLVER"),
+	ITEM_SHOTGUN                     UMETA(DisplayName = "ITEM_SHOTGUN"),
+	ITEM_SHURIKEN                    UMETA(DisplayName = "ITEM_SHURIKEN"),
+	ITEM_MEDICAL_BOTTLE              UMETA(DisplayName = "ITEM_MEDICAL_BOTTLE"),
+	ITEM_ASSAULT_RIFLE               UMETA(DisplayName = "ITEM_ASSAULT_RIFLE"),
+	ITEM_BEAM_RIFLE                  UMETA(DisplayName = "ITEM_BEAM_RIFLE"),
+	ITEM_BOUQUET                     UMETA(DisplayName = "ITEM_BOUQUET"),
+	ITEM_MAGIC_WAND                  UMETA(DisplayName = "ITEM_MAGIC_WAND"),
+	ITEM_TOONKIGOU                   UMETA(DisplayName = "ITEM_TOONKIGOU"),
+	ITEM_CHOCO_VANIRA                UMETA(DisplayName = "ITEM_CHOCO_VANIRA"),
+	ITEM_MELTDOWN_BODY               UMETA(DisplayName = "ITEM_MELTDOWN_BODY"),
+	ITEM_CRANE                       UMETA(DisplayName = "ITEM_CRANE"),
+	ITEM_OGRE_CLUB                   UMETA(DisplayName = "ITEM_OGRE_CLUB"),
+	ITEM_BAT                         UMETA(DisplayName = "ITEM_BAT"),
+	ITEM_NAGINATA                    UMETA(DisplayName = "ITEM_NAGINATA"),
+	ITEM_PAINT_CAT_GUN               UMETA(DisplayName = "ITEM_PAINT_CAT_GUN"),
+	ITEM_TROMBONE                    UMETA(DisplayName = "ITEM_TROMBONE"),
+	ITEM_NAE                         UMETA(DisplayName = "ITEM_NAE"),
+	ITEM_FUSEN                       UMETA(DisplayName = "ITEM_FUSEN"),
+	ITEM_CUPID_ARROW                 UMETA(DisplayName = "ITEM_CUPID_ARROW"),
+	ITEM_LIGHT_BRADE                 UMETA(DisplayName = "ITEM_LIGHT_BRADE"),
+	ITEM_GLOVE                       UMETA(DisplayName = "ITEM_GLOVE"),
+	ITEM_WING_EFFECT                 UMETA(DisplayName = "ITEM_WING_EFFECT"),
+	ITEM_RAGE_EFFECT                 UMETA(DisplayName = "ITEM_RAGE_EFFECT"),
+	ITEM_STAN_LOT                    UMETA(DisplayName = "ITEM_STAN_LOT"),
+	ITEM_MONKON                      UMETA(DisplayName = "ITEM_MONKON"),
+	ITEM_MISSILE                     UMETA(DisplayName = "ITEM_MISSILE"),
+	ITEM_YOUTOU_KOKUKEN              UMETA(DisplayName = "ITEM_YOUTOU_KOKUKEN"),
+	ITEM_SWITCHEROO_KATYUSHA         UMETA(DisplayName = "ITEM_SWITCHEROO_KATYUSHA"),
+	ITEM_FUDE                        UMETA(DisplayName = "ITEM_FUDE"),
+	ITEM_ANGEL_CIRCLE                UMETA(DisplayName = "ITEM_ANGEL_CIRCLE"),
+	ITEM_THROW_NIFE                  UMETA(DisplayName = "ITEM_THROW_NIFE"),
+	ITEM_KZM_TIGER                   UMETA(DisplayName = "ITEM_KZM_TIGER"),
+	ITEM_SF_HADOUKEN                 UMETA(DisplayName = "ITEM_SF_HADOUKEN"),
+	ITEM_FISH_GUN                    UMETA(DisplayName = "ITEM_FISH_GUN"),
+	ITEM_DRONE_STRIKE                UMETA(DisplayName = "ITEM_DRONE_STRIKE"),
+	ITEM_MINI_TANK                   UMETA(DisplayName = "ITEM_MINI_TANK"),
+	ITEM_MOTORCYCLE                  UMETA(DisplayName = "ITEM_MOTORCYCLE"),
+	ITEM_DRINK_HAT                   UMETA(DisplayName = "ITEM_DRINK_HAT"),
+	ITEM_WRESTLER_CHAIR              UMETA(DisplayName = "ITEM_WRESTLER_CHAIR"),
+	ITEM_BAZOOKA                     UMETA(DisplayName = "ITEM_BAZOOKA"),
+	ITEM_TIGER_FEED                  UMETA(DisplayName = "ITEM_TIGER_FEED"),
+	ITEM_KUMA_SALMON                 UMETA(DisplayName = "ITEM_KUMA_SALMON"),
+	ITEM_LEE_ROSE                    UMETA(DisplayName = "ITEM_LEE_ROSE"),
+	ITEM_FRV_SCARECROW               UMETA(DisplayName = "ITEM_FRV_SCARECROW"),
+	ITEM_MIG_APPLE                   UMETA(DisplayName = "ITEM_MIG_APPLE"),
+	ITEM_LAR_ASSAULT_RIFLE           UMETA(DisplayName = "ITEM_LAR_ASSAULT_RIFLE"),
+	ITEM_VIOLET_SUNGLASSES           UMETA(DisplayName = "ITEM_VIOLET_SUNGLASSES"),
+	ITEM_WIN_DRAMA_BLOCK             UMETA(DisplayName = "ITEM_WIN_DRAMA_BLOCK"),
+	ITEM_JIN_LIGHTNINGROD            UMETA(DisplayName = "ITEM_JIN_LIGHTNINGROD"),
+	ITEM_KIN_BDF_NJPW                UMETA(DisplayName = "ITEM_KIN_BDF_NJPW"),
+	ITEM_KIN_OPU_NJPW                UMETA(DisplayName = "ITEM_KIN_OPU_NJPW"),
+	ITEM_KIN_HEF_NJPW                UMETA(DisplayName = "ITEM_KIN_HEF_NJPW"),
+	ITEM_KUMA_CELLPHONE              UMETA(DisplayName = "ITEM_KUMA_CELLPHONE"),
+	ITEM_LAR_BDF_NJPW                UMETA(DisplayName = "ITEM_LAR_BDF_NJPW"),
+	ITEM_DAMVAL_EFFECT               UMETA(DisplayName = "ITEM_DAMVAL_EFFECT"),
+	ITEM_DAMVAL_EFFECT2              UMETA(DisplayName = "ITEM_DAMVAL_EFFECT2"),
+	ITEM_ANN_WEAPONS                 UMETA(DisplayName = "ITEM_ANN_WEAPONS"),
+	ITEM_NSB_CANE                    UMETA(DisplayName = "ITEM_NSB_CANE"),
+	ITEM_KNM_MASK                    UMETA(DisplayName = "ITEM_KNM_MASK"),
+	ITEM_MAX                         UMETA(DisplayName = "ITEM_MAX")
+};
+
 /**
 *
 */
@@ -175,15 +270,35 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		class USkeletalMesh* DependencyMesh;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		class UStaticMesh* SourceStaticMesh;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		FTransform ItemOffsets;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		TEnumAsByte<TKCharacterSkeletonSocketPos> SocketPosition;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		UClass* ItemBlueprint;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		bool bIsAbilityItem;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		bool bNeverHandOff;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		FTransform AbilityItemOffsets;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		TEnumAsByte<TKCharacterSkeletonSocketPos> AbilityItemSocket;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		TEnumAsByte<TKAbilityItemId> AbilityID;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		class UAnimBlueprint* ItemAB;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		bool bCanChangeClothBlend;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		float ItemHeight;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
+		bool bUseEquippedHeights;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		FRotator DefinedHeadItemSlope;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
 		bool bDefaultItem;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = CharacterItem)
-		TEnumAsByte<EItemCommonGroup> CommonGroup;
+		TEnumAsByte<ItemCommonGroup> CommonGroup;
 };
